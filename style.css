@@ -1,0 +1,54 @@
+
+/* Sivun värejä ym. tyyliä saa vapaasti muokata :) */
+
+html { 
+	background-image: url("wooden-plank-close-up.jpg");
+	padding: 20px;
+}
+
+body { 
+	padding: 30px; 
+	max-width: 70%; 
+	background: antiquewhite; 
+	margin: auto;
+	font-family:verdana;
+	font-size: 14px;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.logo{
+	max-width: 700px;
+}
+
+.linkimg{
+	max-width: 40px;
+}
+
+.tiermaker{
+	max-width: 200px;
+}
+
+li {margin: 10px;}
+
+a {
+	color: red;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+  }
+
+a:hover { color: #04a8f4; }
+a:visited { color: #9375f0; }
+
+
+@media screen and (max-width: 1100px) {
+
+    .logo {max-width: 500px;}
+
+}
+@media screen and (max-width: 800px) {
+
+    .logo {max-width: 320px;}
+
+}
