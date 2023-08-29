@@ -2,19 +2,20 @@
 /* Sivun värejä ym. tyyliä saa vapaasti muokata :) */
 
 html { 
-	background-image: url("wooden-plank-close-up.jpg");
+	background-color: #533E2D;
 	padding: 20px;
 }
 
 body { 
 	padding: 30px; 
 	max-width: 70%; 
-	background: antiquewhite; 
+	background: #DDCA7D; 
 	margin: auto;
 	font-family:verdana;
 	font-size: 14px;
 	line-height: 1.4;
 	text-align: center;
+	color: #242331;
 }
 
 .logo{
@@ -38,8 +39,13 @@ a {
 	font-weight: 600;
   }
 
-a:hover { color: #04a8f4; }
-a:visited { color: #9375f0; }
+a:hover { 
+	color: #04a8f4; 
+	text-shadow: 1px 1px #242331;
+}
+a:visited { 
+	color: #9375f0; 
+}
 
 
 @media screen and (max-width: 1100px) {
@@ -51,4 +57,8 @@ a:visited { color: #9375f0; }
 
     .logo {max-width: 320px;}
 
+}
+
+.svgkuva{
+	max-width: 100px;
 }
