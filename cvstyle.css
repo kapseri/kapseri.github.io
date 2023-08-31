@@ -1,0 +1,12 @@
+body{
+    align-items: center;
+}
+.items{
+    margin-top: 20%;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+.image{
+    max-width: 200px;
+}
