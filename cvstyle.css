@@ -6,6 +6,7 @@ body{
     align-items: center;
     text-align: center;
     font-size: x-large;
+    position: static; 
 }
 .image{
     max-width: 200px;
