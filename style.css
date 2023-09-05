@@ -1,6 +1,11 @@
+/* Värit:
+Tausta: #212237
+Teksti: #6CA3FF
+Muut: #4882C1 */
+
 body{
-    background-color: #0D1117;
-    color: #B450B0;
+    background-color: #212237;
+    color: #6CA3FF;
     font-family: "Ubuntu", sans-serif;
 }
 .linkit{
@@ -18,15 +23,15 @@ body{
     color: #AFDCEB;
 }
 a{
-    color: #B450B0;
+    color: #6CA3FF;
     margin: 5px;
 }
 a:link{
     text-decoration: none;
-    color: #B450B0;
+    color: #6CA3FF;
 }
 a:link:visited{
-    color: #B450B0;
+    color: #6CA3FF;
 }
 a:hover{
     color: #AFDCEB;
@@ -34,10 +39,24 @@ a:hover{
 
 
 .about{
-    text-align: center;
+    text-align: left;
     font-size: large;
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.darkerfont{
+    color: #335a85;
 }
 
 .vanhat{
     text-align: center;
+}
+
+.githubabout{
+    max-width: 60px;
+    filter: invert(1);
 }
