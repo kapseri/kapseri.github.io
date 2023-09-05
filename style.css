@@ -7,11 +7,14 @@ body{
     font-family: "Ubuntu", sans-serif;
     writing-mode: vertical-lr;
     font-size: x-large;
-    margin-top: 40px;
-    margin-left: 30px;
+    display: block;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 30px;
+    top: 20px;
 }
-.nykyinen{
-    writing-mode: horizontal-tb;
+ .nykyinen{
     color: #AFDCEB;
 }
 a{
@@ -27,4 +30,14 @@ a:link:visited{
 }
 a:hover{
     color: #AFDCEB;
+}
+
+
+.about{
+    text-align: center;
+    font-size: large;
+}
+
+.vanhat{
+    text-align: center;
 }
