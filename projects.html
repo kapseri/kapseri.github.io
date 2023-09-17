@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Okei mut tarvitsin vähän javascriptiä et sain tehtyy järkevän slideshown siellä ei oo muuta kun pari functiota-->
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="cvstyle.css">
+<link rel="stylesheet" href="slideshow.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv</title>
     <link rel="icon" type="image/x-icon" href="ankka.ico">
@@ -17,57 +18,34 @@
         <a href="index.html">home</a>
 
     </div>
-    <div class="projects">
-        <img src="team.svg" alt="team">
+    <div class="info">
+        <h3>Please make your browser window bigger to see the projects slide show (Zooming out also works)</h3>
     </div>
-<!--    <div class="vanhat">
-        <p>
-            <h2>TYÖKOKEMUS</h1><br>
-School of Gaming
-Tammikuu 2023 - Toukokuu 2023
--Peruskouluikäisten lasten opettaminen
-ohjelmoimaan iltapäiväkerhoissa. <br><br>
-EKAB Systemservice Oy 
-Helmikuu 2021 - Heinäkuu 2021
--Valmistuviin McDonaldseihin tietotekniikka
-laitteiden asennus ja vanhojen laitteiden
-korjaus/vaihto, sekä etä IT-tukena oleminen <br><br>
-Hesburger Itis Pasaasi
-Kesäkuu 2020 - Tammikuu 2021
-Hampurilais työntekijä
--asiakaspalvelu
--siisteyden ylläpito <br><br>
-PH Data Oy
-Kesäkuu 2019 (kesätyö)
--Tietokoneiden asennus käyttövalmiiksi
-->Suosittelija Tj Pekka Porras p. 0443456601 <br><br>
-Mikroaitta
-Elokuu 2019 - Lokakuu 2019
--Asiakkaiden tietokoneiden korjaus,
-asentaminen, päivitysten ajo ja ylläpito <br><br>
-LetterboxMediat
--Toimistolla tietokoneiden päivitys ja
-verkkotulostimien yhdistäminen laitteisiin
--Lehtien jakelu <br><br>
-Subway Kontulankaari
-Syyskuu 2018 - Marraskuu 2018
-Sandwich artist
--liha-ja kasvistuotteiden valmistelu myyntiin
--leipien valmistus Subway-
-konseptinmukaisesti
--asiakaspalvelu ja kassanhoito <br><br>
-Dextra lapsettomuusklinikka
-Kesäkuu 2018 (kesätyö)
--asiakaspalvelu
--potilastietojen arkistointi
--näytepakkausten kokoaminen <br><br>
+    <div class="slideshow-container">
 
-Tietotekninen osaaminen
-Windows, Linux, Python, HTML, CSS, Javascript, SQL,
-Microsoft 365, Google Drive, Photoshop.
-
-        </p>
-    </div>
--->
+        <div class="mySlides">
+          <img src="img1.jpg" style="width:100%">
+          <div class="text">Kuinka paljon pyykin pesu maksaa</div>
+        </div>
+        
+        <div class="mySlides">
+          <img src="img2.jpg" style="width:100%">
+          <div class="text">ToDo lista</div>
+        </div>
+        
+        <div class="mySlides">
+          <img src="img3.jpg" style="width:100%">
+          <div class="text">Blogi sivusto</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center" class="dots">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+<script src="slideshow.js"></script>        
 </body>
 </html>
