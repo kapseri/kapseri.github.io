@@ -2,12 +2,15 @@
 Tausta: #212237
 Teksti: #6CA3FF
 Muut: #4882C1 */
-
+html {
+    overflow: hidden;
+    font-size: 62.5%;
+  }
 body{
     background-color: #212237;
 }
 .startbox{
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     margin-right: 25%;
     color: #6CA3FF;
     position: absolute;
@@ -31,7 +34,68 @@ a:link:visited{
 a:hover{
     color: #AFDCEB;
 }
-.coffee{
-    max-width: 120px;
-    margin-bottom: 20px;
+
+
+/*Suuri määrä css ihan vaan jotta hengittävä etusivu animaatio toimisi*/
+  .balls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  @keyframes breathe {
+    0%,
+    100% {
+      transform: rotate(var(--angle)) translate(0px, 0);
+    }
+    45%,
+    55% {
+      transform: rotate(var(--angle)) translate(225px, 0);
+    }
+  }
+  
+  @keyframes turn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  svg {
+    fill: #6CA3FF;
+    width: 40rem;
+    height: 40rem;
+    opacity: 1;
+  }
+  circle {
+    transform: rotate(var(--angle)) translate(112.5px, 0);
+    transform-origin: 50rem 50rem;
+    opacity: 1;
+    animation: breathe 10s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+    animation-delay: 0s;
+  }
+  
+  circle:nth-child(1) {
+    --angle: 60deg;
+  }
+
+  circle:nth-child(3) {
+    --angle: 180deg;
+  }
+
+  circle:nth-child(5) {
+    --angle: 300deg;
+  }
+
+  
+  .bubbles {
+    transform-origin: 50rem 50rem;
+    animation: turn 30s linear infinite;
+  }
+  @media only screen and (max-width: 650px) {
+    .balls {
+        display: none;
+    }
 }
