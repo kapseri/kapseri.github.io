@@ -1,5 +1,9 @@
 .contact{
     text-align: center;
     align-items: center;
+    margin: auto;
     margin-top: 40vh;
+}
+@media only screen and (max-width: 450px) {
+	.contact {max-width: 200px;}
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pojot.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Points</title>
+    <link rel="icon" type="image/x-icon" href="ankka.ico">
+</head>
+<body>
+    <div class="linkit">
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+        <a href="index.html">home</a>
+    </div>
+    <div class="pojot">
+        <h2>Tällä sivulla on tehtynä tehtävät järjestyksessä</h2>
+        <ul>
+            <li>9. Lista</li>
+            <li>8. Taulukko</li>
+            <li>14. Käytetty perintää CSS:ssä</li>
+            <li>17. Kuvia muotoiltu - kehykset, varjo</li>
+            <li>22. Image map</li>
+            <li>19. Painike (Button)</li>
+            <li>20. Upotus – Kartta, Youtube etc</li>
+            <li>23. CSS Grid – Kuva Gallerian esim</li>
+        </ul>
+
+        <table>
+            <tr>
+              <th>Numero</th>
+              <th>Elementti</th>
+              <th>Pisteet</th>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Taulukko</td>
+              <td>2 pistettä</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Taulukko</td>
+              <td>2 pistettä</td>
+            </tr>
+          </table>
+          <img usemap="#workmap" class="kuva" src="https://api.akuankka.fi/images/characters/00/57/57/1810-527ca75090c0c6bd23d089c74cb926fd91bd1d40-default.png" alt="Kuva"> <br><br>
+          <map name="workmap">
+            <area shape="default" alt="Computer" href="https://fi.wikipedia.org/wiki/Tupu,_Hupu_ja_Lupu" target="_blank">
+          </map>
+          <button onclick="eiOoJs()">Mitä kuvassa näkyy</button><br><br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6Rkpx2ypimk?si=29bXecqwwZ6mWixC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br> <br>
+          <div class="grid-container">
+            <div class="grid-item"><img src="https://fortniteskins.net/wp-content/uploads/2021/11/rock-out-emote-hd.png" alt="kuva"></div>
+            <div class="grid-item"><img src="https://fortnite.gg/img/items/4674/bg.jpg?3" alt="kuva"></div>
+            <div class="grid-item"><img src="https://fortniteskins.net/wp-content/cache/thumb/2c/c16054528ad742c_666x630.webp" alt="kuva"></div>
+          </div>
+    </div>
+
+    <script>
+    function eiOoJs() {
+      alert("Kuvassa näkyy Tupu, Hupu ja Lupu partiolais asuissa!");
+    }
+    </script>
+
+</body>
+</html>
