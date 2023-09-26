@@ -1,0 +1,8 @@
+@media only screen and (max-width: 950px) {
+	.about {max-width: 400px;}
+    .darkerfont {visibility: hidden;}
+}
+@media only screen and (max-width: 550px) {
+	.about {max-width: 200px;}
+    .darkerfont {visibility: hidden;}
+}
